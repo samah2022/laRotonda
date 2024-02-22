@@ -1,6 +1,50 @@
 $(document).ready( function(){
     gsap.registerPlugin(ScrollTrigger);
 
+    // Banner Big Image
+    gsap.to("#bannerBigimg", {
+      duration: 2,
+      // y: 1200,
+      yPercent: 150,
+      ease: "power2.inOut",
+      yoyo: true,
+      repeat: 1,
+      repeatRefresh: true
+    });
+    
+    // Banner Big Text
+    gsap.to("#headingBig", {
+      duration: 1.5,
+      scale: 2,
+      delay: 0.8,
+      transformOrigin: "top left",
+      ease: "power2.inOut",
+      yoyo: true,
+      repeat: 1,
+      repeatRefresh: true
+    });
+    
+    // Banner Design Text
+    gsap.to("#headingSmall", {
+      delay: 1.2,
+      opacity: 0
+    });
+    gsap.to("#headingSmall", {
+      delay: 2,
+      left: "-100vw"
+    });
+    gsap.to("#headingSmall", {
+      delay: 3.6,
+      duration: 1.8,
+      left: 0,
+      opacity: 1
+    });
+    
+
+    
+
+    
+
     
     // Projects section - Title
     gsap.set(".projects-section .title", {
@@ -8,7 +52,7 @@ $(document).ready( function(){
       opacity: 0
     });
     gsap.to(".projects-section .title", {
-      duration: 0.5,
+      duration: 1,
       y: 0,
       opacity: 1,
       ease: "power2.inOut",
@@ -27,7 +71,7 @@ $(document).ready( function(){
       x: -800
     });
     gsap.to(".pbox-left", {
-      duration: 0.5,
+      duration: 1,
       x: 0,
       opacity: 1,
       scale: 1,
@@ -46,7 +90,7 @@ $(document).ready( function(){
       x: 500
     });
     gsap.to(".pbox-right", {
-      duration: 0.5,
+      duration: 1,
       x: 0,
       ease: "power2.inOut",
       yoyo: true,
@@ -65,7 +109,7 @@ $(document).ready( function(){
       opacity: 0
     });
     gsap.to(".project-content", {
-      duration: 0.5,
+      duration: 1,
       x: 0,
       y: 0,
       opacity: 1,
@@ -87,7 +131,7 @@ $(document).ready( function(){
       scale: 0
     });
     gsap.to(".contact-box, .contact-border", {
-      duration: 1,
+      duration: 1.6,
       opacity: 1,
       scale: 1,
       transformOrigin: "top right",
