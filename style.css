@@ -61,6 +61,7 @@ h2.title {
   width: 100%;
   user-select: none;
   pointer-events: none;
+
 }
 p {
   margin: 0 0 24px;
@@ -285,6 +286,10 @@ li{
     font-size: 22px;
     line-height: 34px;
   }
+  .larotondatxt{
+    top: 52px !important;
+    position: relative;
+  }
 
   /* button */
   .common-btn {
@@ -353,7 +358,10 @@ li{
     font-size: 16px;
     line-height: 24px;
   }
-
+  .larotondatxt{
+    top: 52px !important;
+    position: relative;
+  }
   /* banner */
   .banner-box {
     padding: 40px;
@@ -374,11 +382,10 @@ li{
     line-height: 24px;
   }
 
-  /* Company */
+  /* Company 
   .company-section {
     padding-top: 156px;
-  }
-
+  }*/
   /* Designer */
   .designer-box {
     height: 410px;
@@ -580,6 +587,10 @@ li{
     left: 12px;
     top: -12px;
   }
+  .larotondatxt{
+    top: 52px !important;
+    position: relative;
+  }
 }
 /**start header**/
 
@@ -649,7 +660,6 @@ nav ul{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 #plate {
@@ -886,4 +896,12 @@ iframe {
 }
 .fa-heart::before{
   color: red;
+}
+.fixed{
+  position:fixed;
+  z-index: 4;
+}
+.larotondatxt{
+  top: 52px !important;
+  position: relative;
 }
