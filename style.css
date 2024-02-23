@@ -873,7 +873,7 @@ a:hover{
   nav ul a {
     padding: 0.5rem;
   }
-  h1.title{
+  h1.title, ul{
     text-align: center;
   }
 }
